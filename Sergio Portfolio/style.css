@@ -1,0 +1,418 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Inter, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    display: flex;
+    height: auto;
+    justify-content: center;
+    background-color: rgb(233, 233, 233);
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-block: 1.75%;
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+}
+
+.mainbar div  {
+    border-radius: 15rem;
+    background-color: white;
+    width: 7.5rem;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 45px -15px rgba(0, 0, 0, 0.75);
+    display: flex;
+    height: 3.5rem;
+    transition: 0.3s ease;
+}
+
+.mainbar div:hover {
+    cursor: pointer;
+    height: 4rem;
+    transform: rotate(7deg);
+}
+
+.contactbar:hover {
+    cursor: pointer;
+    height: 4rem;
+    transform: rotate(-7deg);
+}
+
+nav a {
+    text-decoration: none;
+    font-weight: 600;
+    color: #505050;
+}
+
+nav img {
+    background-color: white;
+    padding: 1%;
+    border-radius: 10rem;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0px 0px 45px -15px rgba(0, 0, 0, 0.75);
+}
+
+.about {
+    height: auto;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    top: 33vh;
+}
+
+.about h3 {
+    max-width: 70%;
+    text-align: center;
+    color: #5e5e63;
+    font-weight: 500;
+}
+
+.gradient-container {
+    width: 60vw;
+    height: 80vh;
+    position: absolute;
+    top: 14%;
+    z-index: 0;
+    background: radial-gradient(circle, rgb(255, 255, 255) 35%, rgb(233, 233, 233) 55%);
+}
+
+.about > * {
+    margin-bottom: 5%;
+}
+
+.about h1 {
+    font-size: 5rem;
+    background: #969699;
+    background: linear-gradient(141deg, #969699, #1E1E22);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+.location {
+    display: flex;
+    justify-content: space-evenly;
+    width: 10.5rem;
+    align-items: center;
+}
+
+.location p, i {
+    color: #5e5e63;
+    font-weight: 500;
+    font-size: 1.05rem;
+    border-bottom: 2px solid #5e5e63;
+    transition: 0.5s ease-in-out;
+}
+
+.location p:hover {
+    transform: skew(2deg, 2deg);
+}
+
+.icm {
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 55%;
+    background-color: #f3f3f3;
+    border-radius: 2rem;
+    z-index: 1;
+    padding-left: 2.5%;
+    transition: 0.5s ease-in-out;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.projects {
+    position: absolute;
+    top: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.languages h2 {
+    display: flex;
+    align-items: center;
+}
+
+.languages {
+    width: 40%;
+    height: auto;
+    position: absolute;
+    top: 210vh;
+    background-color: white;
+    padding: 2%;
+    border-radius: 2rem;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    transition: 0.5s ease-in-out;
+}
+
+.languages:hover {
+    border-radius: 1.5rem;
+}
+
+.icons i {
+    border-bottom: none;
+    color: #5e5e63;
+    font-size: 3rem;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.icons i:hover {
+    transform: scale(1.15, 1.15);
+}
+
+.icons {
+    gap: 4%;
+    justify-content: center;
+    display: flex;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: 275vh;
+}
+
+.footer p {
+    font-size: 1rem;
+    font-weight: 300;
+    color: #5e5e63;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.html, .js, .css, .python {
+    width: 100%;
+}
+
+.html, .js, .css, .python h2 {
+    color: #242424;
+}
+
+.html .progress-bar {
+    background-color: #cfcfcf;
+    width: 100%;
+    height: 2.25rem;
+    border-radius: 0.75rem;
+}
+
+.html .progress{
+    background-color: #5e5e63;
+    width: 85%;
+    border-radius: 0.75rem;
+    height: inherit;
+}
+
+.html .progress {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.html .progress h2 {
+    color: #e9e9e9;
+    font-weight: 500;
+    margin-right: 2%;
+}
+
+/*css*/
+.css .progress-bar {
+    background-color: #cfcfcf;
+    width: 100%;
+    height: 2.25rem;
+    border-radius: 0.75rem;
+}
+
+.css .progress{
+    background-color: #5e5e63;
+    width: 65%;
+    border-radius: 0.75rem;
+    height: inherit;
+}
+
+.css .progress {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.css .progress h2 {
+    color: #e9e9e9;
+    font-weight: 500;
+    margin-right: 2%;
+}
+
+/**/
+.js .progress-bar {
+    background-color: #cfcfcf;
+    width: 100%;
+    height: 2.25rem;
+    border-radius: 0.75rem;
+}
+
+.js .progress{
+    background-color: #5e5e63;
+    width: 45%;
+    border-radius: 0.75rem;
+    height: inherit;
+}
+
+.js .progress {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.js .progress h2 {
+    color: #e9e9e9;
+    font-weight: 500;
+    margin-right: 2%;
+}
+
+/*python*/
+.python .progress-bar {
+    background-color: #cfcfcf;
+    width: 100%;
+    height: 2.25rem;
+    border-radius: 0.75rem;
+}
+
+.python .progress{
+    background-color: #5e5e63;
+    width: 25%;
+    border-radius: 0.75rem;
+    height: inherit;
+}
+
+.python .progress {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.python .progress h2 {
+    color: #e9e9e9;
+    font-weight: 500;
+    margin-right: 2%;
+}
+
+.languages div {
+    margin-bottom: 3.5%;
+}
+
+.languages i{
+    border-bottom: none;
+    font-size: 1.75rem
+}
+
+.projects div div i {
+    border-bottom: none;
+    padding: 0;
+    margin: 0;
+}
+
+.projects div div button {
+    padding: 2.5%;
+    max-width: 40%;
+    height: 15%;
+    border-radius: 100rem;
+    border: none;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 0px 24px;
+    background-color: rgb(228, 228, 228);
+    font-weight: 500;
+    font-size: 1rem;
+    transition: 0.35s ease-in-out;
+    color: #3b3b3b;
+}
+
+.projects div div button:hover {
+    cursor: pointer;
+    max-width: 35%;
+}
+
+.icm:hover {
+    max-width: 57.5%;
+}
+
+.projects div div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 6%;
+}
+
+.projects div div h2 {
+    font-size: 2.5rem;
+    color: #3b3b3b;
+}
+
+.projects div div h3 {
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    color: #3b3b3b;
+}
+
+.projects div div p {
+    color: #5e5e63;
+    font-weight: 500;
+}
+
+.location i {
+    font-size: 1.5rem;
+    border-bottom: none;
+}
+
+nav img:hover {
+    animation-name: rotate;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+}
+
+.mainbar {
+    display: flex;
+    justify-content: space-around;
+    width: 30vw;
+    height: auto;
+    align-items: center;
+}
+
+.contactbar {
+    width: 9vw;
+    height: 3.5rem;
+    border-radius: 10rem;
+    background-color: white;
+    box-shadow: 0px 7px 45px -15px rgba(0, 0, 0, 0.75);
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    transition: 0.3s ease;
+}
+
+@keyframes rotate {
+    0% {transform: rotate(0deg);}
+    50% {transform: rotate(360deg);}
+    100% {transform: rotate(0deg);}
+}
